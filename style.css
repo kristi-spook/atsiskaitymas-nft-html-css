@@ -1,0 +1,345 @@
+:root {
+  --grey: rgb(88, 85, 85);
+  --pink: #ff3998;
+  --lightgrey: #eeeeee;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+header i {
+  font-size: 2rem;
+  color: var(--grey);
+}
+
+nav a {
+  display: none;
+}
+
+.mobile-padding {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+article {
+  background-image: url(graphic.svg);
+  background-repeat: no-repeat;
+  background-position: top right -150px;
+  background-size: contain;
+}
+
+article h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+article h3,
+.bottom-section h3 {
+  max-width: 80%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: var(--pink);
+}
+
+article p,
+.bottom-section p {
+  max-width: 60%;
+  color: var(--grey);
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: white;
+  border: none;
+  border: 4px solid var(--pink);
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+
+.paragraph-formatting {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.header-formatting {
+  font-weight: 400;
+  font-size: 2em;
+  max-width: 80%;
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.early-birds {
+  background-image: url(background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.text-block {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+span {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px;
+  max-width: 90%;
+  margin: 10px auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.logos img {
+  max-width: 8rem;
+}
+
+.logos img:nth-child(4) {
+  display: none;
+}
+
+.nft {
+  display: flex;
+  gap: 1em;
+}
+.container {
+  width: 290px;
+  height: 418px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  background-color: var(--lightgrey);
+  border-radius: 20px;
+}
+.price h4::before {
+  content: url(eth.svg);
+  padding-right: 8px;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 5px;
+}
+.description {
+  width: 100%;
+  height: 140px;
+  background-color: var(--lightgrey);
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.name h6 {
+  color: orange;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.name h4,
+.price h4 {
+  font-size: 1.2rem;
+  color: var(--grey);
+}
+
+.name h5,
+.price h5 {
+  font-weight: normal;
+  color: var(--grey);
+}
+
+.price {
+  text-align: right;
+}
+
+.price h6 {
+  font-weight: normal;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.grey-line {
+  height: 2px;
+  background-color: var(--lightgrey);
+  margin-bottom: 50px;
+}
+
+.bottom-section {
+  background-image: url(upsell-footer-image.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right -30px;
+  background-size: contain;
+  background-size: 160px;
+}
+
+.bottom-section h1 {
+  font-size: 2.5em;
+}
+footer .footer-nft {
+  margin-top: 50px;
+}
+
+footer .footer-nft i {
+  padding-right: 5px;
+}
+.footer-nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.column p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+.column {
+  padding-top: 50px;
+}
+
+.column .footer-nav-head {
+  font-weight: bold;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+.footer-copyright p:last-child {
+  display: none;
+}
+/* ------------------------------------------------- */
+@media screen and (min-width: 760px) {
+  header {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  nav .fa-solid {
+    display: none;
+  }
+  nav a {
+    display: inline;
+    text-decoration: none;
+    color: var(--grey);
+    padding-left: 10px;
+  }
+  nav a:last-child {
+    color: var(--pink);
+  }
+
+  article {
+    max-width: 90%;
+    margin: 0 auto;
+    height: 80vh;
+    background-image: center right;
+    background-position: center right;
+    margin-bottom: 20px;
+  }
+
+  .bottom-section {
+    max-width: 90%;
+    margin: 0 auto;
+    height: 80vh;
+    background-image: center right;
+    background-size: auto;
+    background-position: bottom right 250px;
+    /* margin-bottom: 20px; */
+  }
+
+  article p,
+  .bottom-section p {
+    max-width: 50%;
+  }
+
+  article h3 {
+    font-size: 1.5em;
+  }
+
+  article h1 {
+    font-size: 6em;
+  }
+
+  .early-birds {
+    width: 90%;
+    margin: 0 auto;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .logos img:nth-child(4) {
+    display: inline;
+  }
+
+  .rare-auction {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .nft {
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .grey-line {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .bottom-section {
+    display: flex;
+    align-items: center;
+  }
+
+  footer {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-nav {
+    display: flex;
+  }
+
+  .column {
+    padding-left: 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-copyright p:last-child {
+    display: inline;
+  }
+  article {
+    display: flex;
+    align-items: center;
+  }
+}
